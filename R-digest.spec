@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.5.1
+Version:          0.6.2
 Release:          1
 Summary:          Create cryptographic hash digests of R objects
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/digest_0.6.2.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 
 %description
@@ -44,6 +44,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %dir %{rlibdir}/%{packname}
 %doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/DESCRIPTION
+%doc %{rlibdir}/%{packname}/GPL-2
 %{rlibdir}/%{packname}/INDEX
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
@@ -57,4 +58,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775798
 - Import R-digest
 - Import R-digest
+
 
