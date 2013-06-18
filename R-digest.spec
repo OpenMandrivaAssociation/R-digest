@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.6.3
-Release:          1
+Release:          2
 Summary:          Create cryptographic hash digests of R objects
 Group:            Sciences/Mathematics
 License:          GPL-2
